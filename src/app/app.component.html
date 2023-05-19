@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<nav class="navbar navbar-expand-sm bg-ligth navbar-dark">
+  <div class="logo">
+    <a  class="navbar-brand" href="#"><img [src]="'/assets/logo1 emp.jpg'" title="Employee Management" alt="logo">Employee Management</a>
+    </div>
+  <ul class = "navbar-nav ms-auto">
+   <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="home" routerLinkActive="" class="nav-link" title="Home" class="btn btn-outline-info" style="margin-left: 6px"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+    </li>
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="about" routerLinkActive="" class="nav-link" title="About" class="btn btn-outline-warning" style="margin-left: 6px"><i class="fa fa-info-circle"></i>About</a>
+    </li>
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="contactus" routerLinkActive="active" class="nav-link" title="Contact" class="btn btn-outline-primary" style="margin-left: 6px"><i class="fa fa-phone"></i>Contact</a>
+    </li>
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="services" routerLinkActive="" class="nav-link" title="Services" class="btn btn-outline-secondary" style="margin-left: 6px" ><i class="fa fa-user"></i>Services</a>
+    </li> 
+    
+      <li class = "nav-item">
+        <a  *ngIf="loginService.isUserLoggedIn()" routerLink="employees" title="Employee list" class="nav-link" class="btn btn-outline-success" style="margin-left: 6px" ><i class="fa fa-list"></i>Employee List</a>
+      </li>
+    <li class = "nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="create-employee" title="Add Employee" class="nav-link" class="btn btn-outline-secondary" style="margin-left: 6px" ><i class="fa fa-plus"></i>Add Employee</a>
+      </li>
+     <li class = "nav-item">
+        <a  *ngIf="loginService.isUserLoggedIn()" routerLink="feedback" title="Feedback" class="nav-link" class="btn btn-outline-primary" style="margin-left: 6px" ><i class="fa fa-comments-o"></i>Feedback</a> 
+      </li>
+    <li class = "nav-item">
+       <a *ngIf="loginService.isUserLoggedIn()" routerLink="logout" title="Logout" class="nav-link" class="btn btn-outline-light" style="margin-left: 6px" ><i class="fa fa-sign-out" ></i>LogOut</a> 
+   </li> 
+   <li class = "nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="login-page" title="Login" class="nav-link" class="btn btn-outline-success" style="margin-left: 6px"  ><i class="fa fa-sign-in"></i>Login</a> 
+    </li>
+  
+</ul>
+ 
+  </nav>
+
+
+
+<div class = "container">
+  <router-outlet></router-outlet>
+</div>
+  

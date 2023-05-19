@@ -1,0 +1,34 @@
+.input-group{
+    width: 500px;
+    justify-content: center;
+    left: 93%;
+}
+
+.table thead{
+    color:#1080db;
+    font-style: oblique;
+    justify-content: center;
+}
+.table tbody{
+    color:black;
+    font-style: oblique;
+}
+.box{
+    background:linear-gradient(to right, #bd7ea88a 0%, rgb(183, 60, 148) 100%);
+    
+    font-style: oblique;
+}
+
+tr,h2{
+    text-align: center;
+}
+
+.previous {
+    text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .next {
+    text-align: right;
+    }

@@ -1,0 +1,32 @@
+
+<div class="content">
+    <h1>Employee Management</h1>
+    
+  <div class="wrapper">
+    
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" name="email" required [(ngModel)]="email">
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password"  maxlength="15" name="password" required [(ngModel)]="password">
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember me</label>
+          <a href="forgot-password">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn" (click)=checkLogin()>Login</button>
+        <div class="login-register">
+          <p>Don't have an account? <a href="register-page" class="register-link">Register</a></p>
+          <p id="e" style="color: rgb(225, 15, 15); font-size: large;font-weight: bold;">{{emessage}}</p>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>

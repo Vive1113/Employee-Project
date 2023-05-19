@@ -1,0 +1,28 @@
+.box {
+    position: absolute;
+    margin-top: 21%;
+    left: 50%;
+    
+    width: 600px;
+     height: min-content;
+    transform: translate(-53%, -50%);
+   
+    padding: 0.5rem;
+    box-sizing: border-box;
+    background:linear-gradient(to right, #ea9d2aec 0%, rgb(229, 226, 76) 100%);
+    border-radius: 0.625rem;
+    border-style: solid;
+    border-color: rgb(10, 180, 247);
+    
+}
+  
+.box h3 {
+    margin: 0 0 1.875rem;
+    padding: 0;
+    color: #0c0b0c;
+    text-align: center;
+  }
+  
+  .box .inputBox {
+    position: relative;   
+  }

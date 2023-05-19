@@ -1,0 +1,51 @@
+.box{
+    color: #fff;
+    font-style: italic;
+}
+.table{
+
+    
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-53%, -50%);
+        width: 25rem;
+        padding: 3rem;
+        box-sizing: border-box;
+        background:linear-gradient(to right, #ea9d2aec 0%, rgb(229, 226, 76) 100%);
+        border-radius: 0.225rem;
+        border-top-right-radius: 10% ;
+        border-bottom-left-radius: 10%;
+      
+        border-style: outset;
+        box-shadow: 10px 10px 10px #fff;
+        
+       
+
+}
+
+table tr,td{
+border: 1px solid rgb(194, 210, 221);
+  border-collapse: collapse;
+  border-width: 50%;
+  border-left:50% ;
+}
+.table {
+    color:#030d14;
+    font-style: italic;
+   
+   
+}
+
+table {
+  border:1px solid black;
+  padding: 30px;
+}
+th, td{
+  border:1px solid black;
+  padding: 10px;
+}
+h3{
+   position: relative;
+   margin-left: 36%;
+}

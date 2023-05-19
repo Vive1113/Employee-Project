@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="firstName" placeholder="Search by Employee" [(ngModel)] = "firstName" />
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" (click)="searchByName()"><i class="fa fa-search"></i>
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<h2 style="color: maroon;"> Employee List</h2>
+
+<table class = "table table-striped">
+    <thead>
+        <tr style=" color: #060606;;
+        font-size: 18px;justify-content: center;">
+           
+            <th> Employee Name</th>
+            <th> Email </th>
+            <th> Contact No </th>
+            <th> City </th>
+            <th> Gender </th>
+            <th> DOB </th>
+            <th> Position </th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees" style="font-weight: bold; font-size: small;">
+            <td> {{ employee.employeeName }} </td>
+            <td> {{ employee.email }} </td>
+            <td> {{ employee.contactNo }} </td>
+            <td> {{ employee.city }} </td>
+            <td> {{ employee.gender }} </td>
+            <td> {{ employee.dateOfBirth }} </td>
+            <td> {{ employee.position }} </td>
+            
+            <td>
+                <button (click) = "confirmUpdate(employee)" class = "btn btn-info" style="margin-left: 10px; font-weight: bold; font-style: oblique;"><i class="fa fa-refresh"></i> Update</button>
+               
+                <button (click) = "confirmDelete(employee)" class = "btn btn-danger" style="margin-left: 10px; font-weight: bold; font-style: oblique;"><i class="fa fa-trash"></i> Delete</button>
+                
+                <button (click) = "employeeDetails(employee.id)" class = "btn btn-warning" style="font-style: oblique;margin-left: 10px;font-weight:bold"><i class="fa fa-eye"></i> View</button>
+            </td>
+            
+        </tr>
+        <tr *ngIf="employees.length !== 0">
+            <button class="m-3 btn btn-danger btn-sm active" (click)="removeAllEmployees()">
+                Remove All 
+            </button>
+        
+         <a href="employees" class="m-3 btn btn-secondary btn-sm active">Back</a>
+        
+         </tr>
+        <tr scope="row" *ngIf="employees.length === 0">
+            <td colspan="4"  style="color: darkred;" class="text-center"> No Record Found !! </td>
+
+        </tr>
+    </tbody>
+</table>

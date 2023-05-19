@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+body{
+    background: #10d3ec;
+    font-family: 'Hind Siliguri', sans-serif;
+    
+}
+.card{
+    width: 400px;
+    border: groove;
+    border-radius: 15px;
+    background:linear-gradient(to right,#c04eea, #c944c4 0%, rgb(43, 241, 149) 100%);
+    border-color: rgb(203, 157, 7);
+    border-style: inset;
+   
+    box-shadow: 5px 5px 10px #0a0000;
+  
+}
+
+.adiv{
+    
+    background:linear-gradient(to right, #ea9d2aec 0%, rgb(229, 226, 76) 100%);
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 23px;
+    height: 46px;
+ 
+}
+
+.fas{
+    cursor: pointer;
+}
+.fa-chevron-left{
+    color: #d80808;
+}
+
+.form-control{
+    border: none;
+    background: #e9e2e2;
+    font-size: 12px;
+}
+.form-control:focus{
+    box-shadow: none;
+    background: #ebe5e4;
+}
+.form-control::placeholder{
+    font-size: 12px;
+    color: #f42415;
+}
+.btn-light{
+    background: #bdc3cd;
+    padding: 4px 0 7px;
+    border: none;
+}
+.btn-info:focus{
+    box-shadow: #d80808;
+}
+.btn-info span{
+    font-size: 12px;
+    color: #cb10a2;
+}
+p.mt-3{
+    font-size: 11px;
+    color: #de0909; 
+    cursor: pointer;
+    
+}
+.radio:checked ~ span {
+  filter: grayscale(0);
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+    
+    
+
+}
+
+h5 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: rgb(101, 5, 50);
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: rgb(10, 10, 10);
+  font-size: 27px;
+  font-weight: bold;
+}
+
+button{
+  font-style: normal;
+  color: #1b1919;
+  background: #038591;
+  padding: 4px 0 7px;
+  border: #de0909;
+ box-shadow: black;
+     
+}
+.mt-2{
+    border: #de0909;
+    box-shadow: black;
+        
+}
+h6{
+  color: #1b1919;
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(231, 206, 16, 0.941), 0 17px 50px 0 rgba(223, 194, 31, 0.909);
+  }

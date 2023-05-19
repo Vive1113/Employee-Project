@@ -1,0 +1,23 @@
+.box {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+    width: 30rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    background:linear-gradient(to right,#c04eea, #c944c4 0%, rgb(43, 241, 149) 100%);
+    border-radius: 0.225rem;
+    border-style: inset;
+    box-shadow: 5px 5px 10px #100f0f;
+  
+  }
+  .container {
+    margin: 0 0 1.875rem;
+    padding: 0;
+    color: #e5e9eb;
+    text-align: center;
+  }
+  .box span{
+    color:#fff
+  }
